@@ -1,0 +1,3 @@
+[submodule "cores/Lucid64/src"]
+	path = cores/Lucid64/src
+	url = https://github.com/Peter-Herrmann/Lucid64
