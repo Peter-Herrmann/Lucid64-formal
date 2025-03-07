@@ -21,8 +21,3 @@ jobs:
         run: |
           cd cores/Lucid64
           make test
-
-      - name: Capture Results
-        run: | 
-          cd cores/Lucid64
-          make results_no_color
