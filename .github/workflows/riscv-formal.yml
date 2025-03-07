@@ -1,0 +1,23 @@
+name: RISC-V Formal Verification
+
+on:
+  push:
+
+jobs:
+  setup:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 480
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+
+      - name: Install OSS-CAD-Suite
+        uses: YosysHQ/setup-oss-cad-suite@v3
+
+      - name: Run Formal Verification
+        run: |
+          cd cores/Lucid64
+          make test

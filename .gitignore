@@ -1,0 +1,5 @@
+/cores/.gitignore
+cores/test/test/
+.vscode/settings.json
+cores/Lucid64/Lucid64_formal/
+cores/Lucid64/die/
